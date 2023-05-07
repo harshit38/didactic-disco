@@ -29,3 +29,26 @@ def login(request):
             "title": "login",
         },
     )
+
+
+def logout(request):
+    return render(
+        request,
+        "dashboard/logout.html",
+        {
+            "title": "logout",
+        },
+    )
+
+
+def youtube(request):
+    return render(
+        request,
+        "dashboard/youtube.html",
+        {
+            "title": "logout",
+        },
+    )
+
+def notes(request):
+    return render(request, "dashboard/notes.html")
