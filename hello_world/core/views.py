@@ -8,3 +8,24 @@ def index(request):
             "title": "Django example",
         },
     )
+
+
+
+def home(request):
+    return render(
+        request,
+        "dashboard/home.html",
+        {
+            "title": "home",
+        },
+    )
+
+
+def login(request):
+    return render(
+        request,
+        "dashboard/login.html",
+        {
+            "title": "login",
+        },
+    )
