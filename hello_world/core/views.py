@@ -3,9 +3,9 @@ from django.shortcuts import render
 def index(request):
     return render(
         request,
-        "index.html",
+        "dashboard/home.html",
         {
-            "title": "Django example",
+            "title": "Study portal",
         },
     )
 
